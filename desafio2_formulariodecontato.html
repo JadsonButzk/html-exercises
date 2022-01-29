@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-Edje">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<link rel="stylesheet" href="../../estudo_css/estilo.css">		
+		<title>Formulário de contato</title>
+		<style>
+			* {
+				font-family: Arial,sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Formulário de contato</h1>
+		<form method="post" action="">
+			<fieldset>
+				<legend>Entre em contato</legend>
+				<br>
+				<label for="assunto"><b>Assunto:</b></label>
+				<select name="assunto" id="assunto" multiple size="1">
+					<option value="suporte">Suporte</option>
+					<option value="sugestão">Sugestão</option>
+					<option value="reclamação">Reclamação</option>
+				</select>
+				<br>
+				<br>
+				<label for="nome"><b>Nome Completo:</b></label>
+				<br>
+				<input type="name" id="nome" name="nome" placeholder="Seu nome"> 
+				<br>
+				<br>
+				<label for="email"><b>E-mail:</b></label>
+				<br>
+				<input type="email" id="email" name="email" placeholder="email@seudominio.com">
+				<br>
+				<br>
+				<label for="mensagem"><b>Mensagem:</b></label>
+				<br>
+				<textarea id="mensagem" name="mensagem" cols="28" rows="10" wrap="on"></textarea>
+				<br>
+				<br>
+				<input type="checkbox" name="recebernovidades" value="on">
+				<label for="recebernovidades">Aceito receber novidades por e-mail</label>
+				<br>
+				<br>
+				<button type="submit">Enviar</button>
+			</fieldset>
+		</form>
+	</body>
+</html>
