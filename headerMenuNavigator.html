@@ -1,0 +1,46 @@
+<!-- 
+    Crie o <header> de um site que contenha um logo e um menu.
+    Um elemento deverá ficar ao lado do outro.
+    A logo que ficará na externa esquerda e o menu ficará na externa extrema direita.
+    Os itens do menu ficarão um ao lado do outro, com um espaço de .8rem entre eles.
+    O último elemento do menu será um botão de contato e você poderá utilizar o seletor :last-child para estilizar.
+ -->
+<style>
+    * {
+        margin: 0;
+    }
+    header {
+        padding: 4em;
+        background-color: lightblue;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+        gap: .8em;
+        align-items: center;
+    }
+    ul li:nth-child(5) {
+        background: black;
+        color: white;
+        padding: .8rem;
+        border-radius: 4px;
+    }
+</style>
+<header>
+    <nav id="menu_principal">
+        <a href="#">LOGO</a>
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SERVICES</li>
+            <li>TESTIMONIALS</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
+</header>

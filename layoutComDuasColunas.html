@@ -1,0 +1,28 @@
+<!-- 
+    Crie um layout com duas colunas, uma ao lado da outra
+    A coluna da esquerda deverá ter 25% de tamanho e a coluna da direita deverá ocupar  todo o espaço que sobra
+    Faça uma separação de 1rem entre os elementos
+ -->
+ <style>
+     section {
+         width: 100%;
+         height: 100%;
+         display: flex;
+         gap: 1rem; 
+     }
+     section div {
+         border: 1px solid;
+     }
+     section div:nth-child(1) {
+         background: lightgray;
+         flex-basis: 25%;
+     }
+     section div:nth-child(2) {
+         background: lightgray;
+         flex-grow: 1;
+     }
+ </style>
+ <section>
+    <div></div>
+    <div></div>
+ </section>
